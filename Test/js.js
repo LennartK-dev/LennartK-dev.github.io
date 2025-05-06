@@ -15,3 +15,13 @@ for (let i=0;i<=100;i++){
         console.log(i)
     }
 }
+
+function range(min,max){
+    liste = []
+    zahl = min
+    while (zahl<= max){
+        liste.push(zahl)
+        zahl++
+    }
+    return liste
+}
