@@ -1,0 +1,11 @@
+h1,h2{
+    color: chartreuse;
+}
+
+#a1{
+    background-color: blue;
+}
+
+.center{
+    text-align: center;font-family: cursive;
+}

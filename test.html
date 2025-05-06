@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css.css" media="screen">
 </head>
-<body>
-    <p>Test</p>
+<body style="background-color: aquamarine;">
+    <h1 class="center">Überschrifft</h1>
+    <h2 class="center">2.Überschrifft</h2>
+    <p style="color:green">Test</p>
     <a href="./index.html">Home</a>
-    <div>Hallo</div>
+    <div id="a1">Hallo</div>
     <a href="https://docs.github.com/en/get-started/start-your-journey/about-github-and-git#how-do-git-and-github-work-together">Test</a>
     <img src="https://www.inovex.de/wp-content/uploads/2021/03/karlsruhe-entwicklerbuero.jpg " width="200" height="100">
     <table border="5">
@@ -26,5 +29,27 @@
             <input type="text" id="name" name="name">
         </div>
     </form>
+    <button id="button1">Fizzi</button>
+    <script>
+        /*let zahl = Number(prompt("Erste Zahl?"))+Number(prompt("Zweite Zahl?"))
+        alert(zahl)*/
+function fizzi(){
+        for (let i=0;i<=100;i++){
+    if (i%3 === 0 && i%5===0){
+        console.log("FizzBuzz")
+            }
+    else if(i%5 === 0){
+        console.log("Buzz")
+    }
+    else if(i%3===0){
+        console.log("Fizz")
+    }
+    else{
+        console.log(i)
+    }}
+}
+const button= document.getElementById("button1")
+button.addEventListener('click',fizzi)
+    </script>
 </body>
 </html>
